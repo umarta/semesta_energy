@@ -1031,3 +1031,128 @@
 2023/05/09 06:33:36 [emerg] 72#72: io_setup() failed (38: Function not implemented)
 2023/05/09 06:33:36 [emerg] 77#77: io_setup() failed (38: Function not implemented)
 2023/05/09 06:33:36 [emerg] 76#76: io_setup() failed (38: Function not implemented)
+2023/05/09 06:43:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/09 06:43:01 [notice] 74#74: gracefully shutting down
+2023/05/09 06:43:01 [notice] 72#72: gracefully shutting down
+2023/05/09 06:43:01 [notice] 74#74: exiting
+2023/05/09 06:43:01 [notice] 72#72: exiting
+2023/05/09 06:43:01 [notice] 76#76: gracefully shutting down
+2023/05/09 06:43:01 [notice] 77#77: gracefully shutting down
+2023/05/09 06:43:01 [notice] 74#74: exit
+2023/05/09 06:43:01 [notice] 72#72: exit
+2023/05/09 06:43:01 [notice] 77#77: exiting
+2023/05/09 06:43:01 [notice] 76#76: exiting
+2023/05/09 06:43:01 [notice] 77#77: exit
+2023/05/09 06:43:01 [notice] 76#76: exit
+2023/05/09 06:43:01 [notice] 1#1: signal 17 (SIGCHLD) received from 77
+2023/05/09 06:43:01 [notice] 1#1: worker process 74 exited with code 0
+2023/05/09 06:43:01 [notice] 1#1: worker process 72 exited with code 0
+2023/05/09 06:43:01 [notice] 1#1: worker process 77 exited with code 0
+2023/05/09 06:43:01 [notice] 1#1: worker process 76 exited with code 0
+2023/05/09 06:43:01 [notice] 1#1: exit
+2023/05/09 06:43:25 [notice] 1#1: using the "epoll" event method
+2023/05/09 06:43:25 [notice] 1#1: nginx/1.20.2
+2023/05/09 06:43:25 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/09 06:43:25 [notice] 1#1: OS: Linux 5.15.49-linuxkit
+2023/05/09 06:43:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/09 06:43:25 [notice] 1#1: start worker processes
+2023/05/09 06:43:25 [notice] 1#1: start worker process 72
+2023/05/09 06:43:25 [notice] 1#1: start worker process 74
+2023/05/09 06:43:25 [notice] 1#1: start worker process 76
+2023/05/09 06:43:25 [notice] 1#1: start worker process 77
+2023/05/09 06:43:25 [emerg] 72#72: io_setup() failed (38: Function not implemented)
+2023/05/09 06:43:25 [emerg] 74#74: io_setup() failed (38: Function not implemented)
+2023/05/09 06:43:25 [emerg] 77#77: io_setup() failed (38: Function not implemented)
+2023/05/09 06:43:25 [emerg] 76#76: io_setup() failed (38: Function not implemented)
+2023/05/09 06:43:52 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/09 06:43:52 [notice] 74#74: gracefully shutting down
+2023/05/09 06:43:52 [notice] 76#76: gracefully shutting down
+2023/05/09 06:43:52 [notice] 72#72: gracefully shutting down
+2023/05/09 06:43:52 [notice] 77#77: gracefully shutting down
+2023/05/09 06:43:52 [notice] 74#74: exiting
+2023/05/09 06:43:52 [notice] 76#76: exiting
+2023/05/09 06:43:52 [notice] 72#72: exiting
+2023/05/09 06:43:52 [notice] 77#77: exiting
+2023/05/09 06:43:52 [notice] 74#74: exit
+2023/05/09 06:43:52 [notice] 76#76: exit
+2023/05/09 06:43:52 [notice] 72#72: exit
+2023/05/09 06:43:52 [notice] 1#1: signal 17 (SIGCHLD) received from 74
+2023/05/09 06:43:52 [notice] 77#77: exit
+2023/05/09 06:43:52 [notice] 1#1: worker process 74 exited with code 0
+2023/05/09 06:43:52 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/09 06:43:52 [notice] 1#1: signal 17 (SIGCHLD) received from 76
+2023/05/09 06:43:52 [notice] 1#1: worker process 72 exited with code 0
+2023/05/09 06:43:52 [notice] 1#1: worker process 76 exited with code 0
+2023/05/09 06:43:52 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/09 06:43:52 [notice] 1#1: signal 17 (SIGCHLD) received from 77
+2023/05/09 06:43:52 [notice] 1#1: worker process 77 exited with code 0
+2023/05/09 06:43:52 [notice] 1#1: exit
+2023/05/09 06:45:09 [notice] 1#1: using the "epoll" event method
+2023/05/09 06:45:09 [notice] 1#1: nginx/1.20.2
+2023/05/09 06:45:09 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/09 06:45:09 [notice] 1#1: OS: Linux 5.15.49-linuxkit
+2023/05/09 06:45:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/09 06:45:09 [notice] 1#1: start worker processes
+2023/05/09 06:45:09 [notice] 1#1: start worker process 72
+2023/05/09 06:45:09 [notice] 1#1: start worker process 74
+2023/05/09 06:45:09 [notice] 1#1: start worker process 76
+2023/05/09 06:45:09 [notice] 1#1: start worker process 78
+2023/05/09 06:45:09 [emerg] 72#72: io_setup() failed (38: Function not implemented)
+2023/05/09 06:45:09 [emerg] 78#78: io_setup() failed (38: Function not implemented)
+2023/05/09 06:45:09 [emerg] 74#74: io_setup() failed (38: Function not implemented)
+2023/05/09 06:45:09 [emerg] 76#76: io_setup() failed (38: Function not implemented)
+2023/05/09 06:45:45 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/09 06:45:45 [notice] 76#76: gracefully shutting down
+2023/05/09 06:45:45 [notice] 74#74: gracefully shutting down
+2023/05/09 06:45:45 [notice] 72#72: gracefully shutting down
+2023/05/09 06:45:45 [notice] 78#78: gracefully shutting down
+2023/05/09 06:45:45 [notice] 78#78: exiting
+2023/05/09 06:45:45 [notice] 76#76: exiting
+2023/05/09 06:45:45 [notice] 74#74: exiting
+2023/05/09 06:45:45 [notice] 72#72: exiting
+2023/05/09 06:45:45 [notice] 78#78: exit
+2023/05/09 06:45:45 [notice] 76#76: exit
+2023/05/09 06:45:45 [notice] 74#74: exit
+2023/05/09 06:45:45 [notice] 72#72: exit
+2023/05/09 06:45:45 [notice] 1#1: signal 17 (SIGCHLD) received from 76
+2023/05/09 06:45:45 [notice] 1#1: worker process 76 exited with code 0
+2023/05/09 06:45:45 [notice] 1#1: worker process 78 exited with code 0
+2023/05/09 06:45:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/09 06:45:45 [notice] 1#1: signal 17 (SIGCHLD) received from 78
+2023/05/09 06:45:45 [notice] 1#1: worker process 72 exited with code 0
+2023/05/09 06:45:45 [notice] 1#1: worker process 74 exited with code 0
+2023/05/09 06:45:45 [notice] 1#1: exit
+2023/05/09 06:46:01 [notice] 1#1: using the "epoll" event method
+2023/05/09 06:46:01 [notice] 1#1: nginx/1.20.2
+2023/05/09 06:46:01 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/09 06:46:01 [notice] 1#1: OS: Linux 5.15.49-linuxkit
+2023/05/09 06:46:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/09 06:46:01 [notice] 1#1: start worker processes
+2023/05/09 06:46:01 [notice] 1#1: start worker process 72
+2023/05/09 06:46:01 [notice] 1#1: start worker process 74
+2023/05/09 06:46:01 [notice] 1#1: start worker process 75
+2023/05/09 06:46:01 [notice] 1#1: start worker process 77
+2023/05/09 06:46:01 [emerg] 72#72: io_setup() failed (38: Function not implemented)
+2023/05/09 06:46:01 [emerg] 77#77: io_setup() failed (38: Function not implemented)
+2023/05/09 06:46:01 [emerg] 75#75: io_setup() failed (38: Function not implemented)
+2023/05/09 06:46:01 [emerg] 74#74: io_setup() failed (38: Function not implemented)
+2023/05/09 07:13:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/09 07:13:11 [notice] 75#75: gracefully shutting down
+2023/05/09 07:13:11 [notice] 77#77: gracefully shutting down
+2023/05/09 07:13:11 [notice] 72#72: gracefully shutting down
+2023/05/09 07:13:11 [notice] 74#74: gracefully shutting down
+2023/05/09 07:13:11 [notice] 74#74: exiting
+2023/05/09 07:13:11 [notice] 75#75: exiting
+2023/05/09 07:13:11 [notice] 77#77: exiting
+2023/05/09 07:13:11 [notice] 77#77: exit
+2023/05/09 07:13:11 [notice] 72#72: exiting
+2023/05/09 07:13:11 [notice] 74#74: exit
+2023/05/09 07:13:11 [notice] 75#75: exit
+2023/05/09 07:13:11 [notice] 72#72: exit
+2023/05/09 07:13:11 [notice] 1#1: signal 17 (SIGCHLD) received from 72
+2023/05/09 07:13:11 [notice] 1#1: worker process 72 exited with code 0
+2023/05/09 07:13:11 [notice] 1#1: worker process 75 exited with code 0
+2023/05/09 07:13:11 [notice] 1#1: worker process 77 exited with code 0
+2023/05/09 07:13:11 [notice] 1#1: signal 17 (SIGCHLD) received from 77
+2023/05/09 07:13:11 [notice] 1#1: worker process 74 exited with code 0
+2023/05/09 07:13:11 [notice] 1#1: exit

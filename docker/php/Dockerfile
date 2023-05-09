@@ -1,5 +1,5 @@
 # docker/php/Dockerfile
-FROM php:8.1-fpm
+FROM php:7.2-fpm
 
 RUN apt-get update
 RUN apt-get install -y openssl zip unzip git curl

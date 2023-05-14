@@ -5,22 +5,27 @@
 - clone project
 - run project
 
-build project
+
+### build project
 ```shell
 make build
 ```
-
+### migrate
 after build project done next run this script to migrate the database & seeder, make sure build process is done 
 
 ```shell
 make migrate
 ```
-
+### api documentation
 to access api documentation visit this link
 ```
 https://documenter.getpostman.com/view/2679695/2s93eePU5b
 ```
-
+### do unit test
+to run unit test
+```shell
+make test 
+```
 
 
 ##### what is concept of load balancer

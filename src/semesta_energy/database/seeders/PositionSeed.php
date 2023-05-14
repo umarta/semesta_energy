@@ -25,7 +25,7 @@ class PositionSeed extends Seeder
             $department = new Position();
             $department->job_position_name = $faker->jobTitle;
             $department->description = $faker->randomLetter;
-            $department->department_id = Department::query()->inRandomOrder()->first();
+            $department->department_id = Department::query()->inRandomOrder()->first()->id;
             $department->save();
 
         }

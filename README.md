@@ -21,6 +21,11 @@ to access api documentation visit this link
 ```
 https://documenter.getpostman.com/view/2679695/2s93eePU5b
 ```
+### hostname and port
+```
+base_url = localhost:1234
+```
+
 ### do unit test
 to run unit test
 ```shell

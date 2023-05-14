@@ -16,21 +16,6 @@ class EmployeeTest extends TestCase
      *
      * @return void
      */
-    public function test_employee_list()
-    {
-        $response = $this->get('/api/employees');
-
-        $response->assertStatus(200);
-    }
-
-    public function test_employee_show()
-    {
-        $employee = Employee::first();
-        $response = $this->get("/api/employees/{$employee->id}");
-
-        $response->assertStatus(200);
-    }
-
 
     public function test_create_employee()
     {
@@ -49,6 +34,23 @@ class EmployeeTest extends TestCase
         $response->assertStatus(201);
 
     }
+    public function test_employee_list()
+    {
+        $response = $this->get('/api/employees');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_employee_show()
+    {
+        $employee = Employee::first();
+        $response = $this->get("/api/employees/{$employee->id}");
+
+        $response->assertStatus(200);
+    }
+
+
+
 
     public function test_edit_employee()
     {

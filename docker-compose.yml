@@ -44,7 +44,7 @@ services:
       MYSQL_USER: "helloworld"
       MYSQL_PASSWORD: '<db-password>'
     ports:
-      - "3306:3306"
+      - "3333:3306"
     volumes:
       - ./database/mysql:/var/lib/mysql
     networks:

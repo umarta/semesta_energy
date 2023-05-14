@@ -1,15 +1,17 @@
 .DEFAULT_GOAL := help
 
 build: ## build develoment environment with laradock
+	cp src/semesta_energy/.env.example src/semesta_energy/.env
 	docker-compose build
-	docker-compose run --rm php php artisan key:generate
 	docker-compose up
 
+
 serve: ## Run Server
-	docker-compose up
+	docker-compose up -d
 
 migrate:
 	docker-compose run --rm php php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+	docker-compose run --rm php php artisan key:generate
 	docker-compose run --rm php php artisan migrate
 	docker-compose run --rm php php artisan passport:install
 	docker-compose run --rm php php artisan db:seed
@@ -20,6 +22,10 @@ migrate_fresh:
 	docker-compose run --rm php php artisan passport:install
 	docker-compose run --rm php php artisan db:seed
 	docker-compose run --rm php php artisan config:clear
+
+test:
+	docker-compose run --rm php php artisan test
+
 
 migrate_partial:
 	docker-compose run --rm php php artisan migrate

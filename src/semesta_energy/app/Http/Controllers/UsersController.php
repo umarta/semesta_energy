@@ -21,8 +21,9 @@ class UsersController extends Controller
         $user->save();
 
         $user->assignRole('User');
+        $user['token'] = $user->createToken('se')->accessToken;
 
-        return emptyResponse('Success do register');
+        return writeResponse($user,'register_success');
     }
 
     public function login(LoginRequest $request)

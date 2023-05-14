@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -23,6 +24,7 @@ class UserRegisterTest extends TestCase
             'password' => 'sasd',
             're_password' => 'sasd',
         ]);
+        User::where('email', 'rahmad@umarta.com')->delete();
         $response->assertStatus(200);
     }
 
@@ -31,7 +33,7 @@ class UserRegisterTest extends TestCase
         $response = $this->post('/api/auth/register', [
             'name' => 'Rahmad',
             'email' => 'rahmad@umartaa.com',
-            'username' => 'rahmadcom',
+            'username' => 'umbara',
             'password' => 'sasd',
             're_password' => 'sasd',
         ]);
@@ -43,7 +45,7 @@ class UserRegisterTest extends TestCase
     {
         $response = $this->post('/api/auth/register', [
             'name' => 'Rahmad',
-            'email' => 'rahmad@umarta.com',
+            'email' => 'umbara@gmail.com',
             'username' => 'rahmadcom',
             'password' => 'sasd',
             're_password' => 'sasd',

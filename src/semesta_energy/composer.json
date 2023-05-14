@@ -28,7 +28,8 @@
     },
     "autoload": {
         "files": [
-            "app/Libraries/Helpers.php"
+            "app/Libraries/Helpers.php",
+            "app/Libraries/CustomPagination.php"
         ],
         "psr-4": {
             "App\\": "app/",

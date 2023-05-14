@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Models\Position;
 use Illuminate\Http\JsonResponse;
 
 
@@ -54,4 +55,17 @@ function notFoundResponse($message): JsonResponse
     ], 404);
 }
 
+function searchMethod($request, $model, $column)
+{
+    $search = $request->search;
+
+    return $model::query()->where($column, 'like', "%$search%");
+}
+
+function clean($string): array|string|null
+{
+    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+
+    return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+}
 

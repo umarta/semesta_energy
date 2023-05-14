@@ -6,13 +6,23 @@ build: ## build develoment environment with laradock
 	docker-compose up
 
 serve: ## Run Server
-	docker-compose up php
+	docker-compose up
 
 migrate:
 	docker-compose run --rm php php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 	docker-compose run --rm php php artisan migrate
 	docker-compose run --rm php php artisan passport:install
 	docker-compose run --rm php php artisan db:seed
+	docker-compose run --rm php php artisan config:clear
+
+migrate_fresh:
+	docker-compose run --rm php php artisan migrate:fresh
+	docker-compose run --rm php php artisan passport:install
+	docker-compose run --rm php php artisan db:seed
+	docker-compose run --rm php php artisan config:clear
+
+migrate_partial:
+	docker-compose run --rm php php artisan migrate
 
 tinker: ## Run tinker
 	docker-compose run --rm php php artisan tinker

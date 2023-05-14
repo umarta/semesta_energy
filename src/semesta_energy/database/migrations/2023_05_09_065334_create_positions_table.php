@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('job_position_name');
             $table->string('description');
-            $table->foreignId('department_id')->references('id')->on('departments');
+            $table->unsignedBigInteger('department_id')->nullable();
+            $table->softDeletes();
+
             $table->timestamps();
         });
     }

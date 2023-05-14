@@ -19,14 +19,14 @@ class UserSeed extends Seeder
     {
         $users = [
             'umbara' => 'User',
-            'Doni' => 'Admin'
+            'admin' => 'Admin'
         ];
         $faker = Faker::create();
         foreach ($users as $key => $user) {
             $store = User::query()->where('username', $key)->firstOrNew();
             $store->name = $key;
             $store->username = $key;
-            $store->email = $faker->email;
+            $store->email = $key.'@gmail.com';
             $store->password = Hash::make(12345);
             $store->save();
 

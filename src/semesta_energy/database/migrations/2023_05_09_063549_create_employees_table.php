@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->string('photo');
             $table->text('address');
             $table->string('handphone');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

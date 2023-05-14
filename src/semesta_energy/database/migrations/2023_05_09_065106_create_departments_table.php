@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('description');
             $table->unsignedBigInteger('head_of_department_id')->nullable();
             $table->foreign('head_of_department_id')->references('id')->on('users');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

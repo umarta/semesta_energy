@@ -25,7 +25,6 @@ class ChampionController extends Controller
         $response = Cache::get('champion_data');
 
         if (!Cache::has("champion_data_query_heroes_{$request->heroes}_page_{$request->page}_limit_{$limit}")) {
-            Log::info("store cache : champion_data_query_heroes_{$request->heroes}_page_{$request->page}_limit_{$limit}");
 
             Cache::remember("champion_data_query_heroes_{$request->heroes}_page_{$request->page}_limit_{$limit}", 3600, function () use ($response) {
                 return $response;
